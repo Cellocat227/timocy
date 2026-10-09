@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>timocy.com is for sale</title>
+<meta name="description" content="timocy.com is a short, brandable .com domain name. Leave your contact details to make an offer.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏷️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #eef1f5;
+    --ink: #101828;
+    --muted: #5b6577;
+    --line: #cbd3de;
+    --cobalt: #3355ff;
+    --cobalt-dark: #2441d6;
+    --white: #ffffff;
+    --error: #b42318;
+    --ok: #067647;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  header.top { display: flex; justify-content: flex-end; padding: 20px 0 0; }
+  .lang {
+    font: inherit; font-size: 15px; color: var(--ink);
+    background: transparent; border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 16px; cursor: pointer;
+  }
+  .lang:hover { border-color: var(--ink); }
+  .lang:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 3px solid var(--cobalt); outline-offset: 2px;
+  }
+
+  /* Hero: the domain name is the product */
+  .hero { padding: 8vh 0 7vh; }
+  .status { margin: 0 0 12px; color: var(--muted); font-size: 17px; }
+  .name {
+    margin: 0;
+    font-weight: 800;
+    font-size: clamp(56px, 15.5vw, 176px);
+    line-height: 0.95;
+    letter-spacing: -0.045em;
+    word-break: keep-all;
+  }
+  .name .tld {
+    color: var(--white);
+    background: var(--cobalt);
+    border-radius: 0.14em;
+    padding: 0 0.1em 0.06em;
+    margin-left: 0.04em;
+    display: inline-block;
+  }
+  .lede { max-width: 34ch; margin: 28px 0 28px; font-size: clamp(20px, 2.6vw, 26px); line-height: 1.4; }
+  .price { margin: 0 0 28px; font-weight: 600; font-size: 20px; }
+  .price span { color: var(--cobalt); }
+  .cta {
+    display: inline-block; background: var(--ink); color: var(--white);
+    text-decoration: none; font-weight: 600; padding: 14px 28px; border-radius: 10px;
+  }
+  .cta:hover { background: var(--cobalt); }
+
+  /* Facts */
+  .facts { border-top: 1px solid var(--line); padding: 40px 0; display: grid; gap: 28px; grid-template-columns: repeat(3, 1fr); }
+  .facts h3 { margin: 0 0 6px; font-size: 20px; }
+  .facts p { margin: 0; color: var(--muted); font-size: 16px; }
+
+
+  /* Industries */
+  .uses { border-top: 1px solid var(--line); padding: 48px 0 8px; }
+  .uses h2 { margin: 0 0 8px; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.1; letter-spacing: -0.02em; }
+  .uses .sub { margin: 0 0 28px; color: var(--muted); max-width: 52ch; }
+  .use-grid { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); }
+  .use { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+  .use h3 { margin: 0 0 6px; font-size: 19px; }
+  .use p { margin: 0; color: var(--muted); font-size: 15.5px; line-height: 1.5; }
+
+  /* Form */
+  .contact { border-top: 1px solid var(--line); padding: 56px 0 72px; display: grid; gap: 40px; grid-template-columns: 1fr 1.2fr; align-items: start; }
+  .contact h2 { margin: 0 0 12px; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; }
+  .contact .side p { margin: 0 0 12px; color: var(--muted); }
+  form { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+  label { display: block; font-weight: 600; font-size: 15px; margin: 0 0 6px; }
+  .field { margin-bottom: 18px; }
+  input, textarea {
+    width: 100%; font: inherit; font-size: 17px; color: var(--ink);
+    background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px;
+  }
+  textarea { min-height: 110px; resize: vertical; }
+  .hint { font-weight: 400; color: var(--muted); }
+  button.send {
+    font: inherit; font-weight: 600; width: 100%; padding: 14px; cursor: pointer;
+    color: var(--white); background: var(--cobalt); border: 0; border-radius: 10px;
+  }
+  button.send:hover { background: var(--cobalt-dark); }
+  button.send:disabled { opacity: .6; cursor: wait; }
+  .msg { margin: 14px 0 0; font-size: 16px; min-height: 1.4em; }
+  .msg.ok { color: var(--ok); }
+  .msg.err { color: var(--error); }
+  .trap { position: absolute; left: -9999px; }
+
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 15px; }
+
+  @media (max-width: 760px) {
+    .facts, .contact, .use-grid { grid-template-columns: 1fr; }
+    .hero { padding-top: 5vh; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <button class="lang" id="langBtn" type="button" aria-label="Switch language">中文</button>
+  </header>
+
+  <section class="hero">
+    <p class="status" data-i18n="status">This domain is for sale</p>
+    <h1 class="name">timocy<span class="tld">.com</span></h1>
+    <p class="lede" data-i18n="lede">A short, easy-to-say .com name, ready for your next brand.</p>
+    <p class="price"><span data-i18n="priceLabel">Asking price</span>: <span data-i18n="priceVal">USD 3,500</span></p>
+    <a class="cta" href="#contact" data-i18n="cta">Make an offer</a>
+  </section>
+
+  <section class="facts">
+    <div>
+      <h3 data-i18n="f1h">Short</h3>
+      <p data-i18n="f1p">Six letters. Easy to type, easy to remember, easy to say out loud.</p>
+    </div>
+    <div>
+      <h3 data-i18n="f2h">A real .com</h3>
+      <p data-i18n="f2p">The extension customers trust most, and the one they guess first.</p>
+    </div>
+    <div>
+      <h3 data-i18n="f3h">Clean and available</h3>
+      <p data-i18n="f3p">Held by the same owner for several years. Ownership transfer is handled through a registrar.</p>
+    </div>
+  </section>
+
+  <section class="uses">
+    <h2 data-i18n="indH">Where this name could work</h2>
+    <p class="sub" data-i18n="indSub">The word has no fixed meaning, so it can take on yours. These are the directions it sounds most at home in.</p>
+    <div class="use-grid">
+      <div class="use"><h3 data-i18n="i1h">Time and scheduling tools</h3><p data-i18n="i1p">Timo sounds like time. A natural fit for calendars, planners and focus apps.</p></div>
+      <div class="use"><h3 data-i18n="i2h">Fintech and payments</h3><p data-i18n="i2p">The -cy ending echoes currency and agency, which gives a money brand a steady feel.</p></div>
+      <div class="use"><h3 data-i18n="i3h">AI assistants</h3><p data-i18n="i3p">A friendly, name-like word suits an assistant people talk to every day.</p></div>
+      <div class="use"><h3 data-i18n="i4h">Consulting and agencies</h3><p data-i18n="i4p">Short and professional, easy to put on a business card or an invoice.</p></div>
+      <div class="use"><h3 data-i18n="i5h">Kids, education and pets</h3><p data-i18n="i5p">Soft, round sounds that feel warm and safe for families.</p></div>
+      <div class="use"><h3 data-i18n="i6h">Health and personal care</h3><p data-i18n="i6p">Clean and gentle, a good base for a consumer wellness brand.</p></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="side">
+      <h2 data-i18n="formTitle">Interested? Leave your details.</h2>
+      <p data-i18n="formP1">Offers are welcome. Tell me how to reach you and what you have in mind, and I'll reply personally, usually within a couple of days.</p>
+      <p data-i18n="formP2">Your details go only to the owner and are never shared.</p>
+    </div>
+
+    <form id="form" novalidate>
+      <div class="field">
+        <label for="name" data-i18n="lName">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email" data-i18n="lEmail">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="wechat"><span data-i18n="lWechat">WeChat or phone</span> <span class="hint" data-i18n="optional">(optional)</span></label>
+        <input id="wechat" name="wechat_or_phone" type="text">
+      </div>
+      <div class="field">
+        <label for="offer"><span data-i18n="lOffer">Your budget or offer</span> <span class="hint" data-i18n="optional">(optional)</span></label>
+        <input id="offer" name="offer" type="text">
+      </div>
+      <div class="field">
+        <label for="message"><span data-i18n="lMsg">Message</span> <span class="hint" data-i18n="optional">(optional)</span></label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <input class="trap" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="send" id="sendBtn" type="submit" data-i18n="send">Send my details</button>
+      <p class="msg" id="msg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer>timocy.com</footer>
+</div>
+
+<script>
+  // 1) Replace with your own Formspree form URL (see setup notes).
+  const FORM_ENDPOINT = "https://formspree.io/f/moejdbea";
+
+  const T = {
+    en: {
+      status: "This domain is for sale",
+      lede: "A short, easy-to-say .com name, ready for your next brand.",
+      cta: "Make an offer",
+      priceLabel: "Asking price",
+      priceVal: "USD 3,500",
+      indH: "Where this name could work",
+      indSub: "The word has no fixed meaning, so it can take on yours. These are the directions it sounds most at home in.",
+      i1h: "Time and scheduling tools", i1p: "Timo sounds like time. A natural fit for calendars, planners and focus apps.",
+      i2h: "Fintech and payments", i2p: "The -cy ending echoes currency and agency, which gives a money brand a steady feel.",
+      i3h: "AI assistants", i3p: "A friendly, name-like word suits an assistant people talk to every day.",
+      i4h: "Consulting and agencies", i4p: "Short and professional, easy to put on a business card or an invoice.",
+      i5h: "Kids, education and pets", i5p: "Soft, round sounds that feel warm and safe for families.",
+      i6h: "Health and personal care", i6p: "Clean and gentle, a good base for a consumer wellness brand.",
+      f1h: "Short",
+      f1p: "Six letters. Easy to type, easy to remember, easy to say out loud.",
+      f2h: "A real .com",
+      f2p: "The extension customers trust most, and the one they guess first.",
+      f3h: "Clean and available",
+      f3p: "Held by the same owner for several years. Ownership transfer is handled through a registrar.",
+      formTitle: "Interested? Leave your details.",
+      formP1: "Offers are welcome. Tell me how to reach you and what you have in mind, and I'll reply personally, usually within a couple of days.",
+      formP2: "Your details go only to the owner and are never shared.",
+      lName: "Your name", lEmail: "Email", lWechat: "WeChat or phone", lOffer: "Your budget or offer", lMsg: "Message",
+      optional: "(optional)",
+      send: "Send my details",
+      sending: "Sending…",
+      ok: "Thanks, got it. I'll get back to you soon.",
+      errFields: "Please enter your name and a valid email.",
+      errSend: "Something went wrong. Please try again, or email the owner directly.",
+      langBtn: "中文",
+      title: "timocy.com is for sale"
+    },
+    zh: {
+      status: "这个域名正在出售",
+      lede: "简短好读的 .com 域名，适合用作你的下一个品牌。",
+      cta: "我要出价",
+      priceLabel: "起售价",
+      priceVal: "3,500 美元",
+      indH: "这个名字可以用在哪些行业",
+      indSub: "这个词本身没有固定含义，所以可以装进你自己的故事。下面是它听起来最顺的几个方向。",
+      i1h: "时间管理与日程工具", i1p: "Timo 听起来像 time，很适合日历、计划、专注类的 App。",
+      i2h: "金融科技与支付", i2p: "-cy 的结尾呼应 currency 和 agency，让金钱类品牌显得稳重。",
+      i3h: "AI 助手", i3p: "像人名一样亲切的词，适合每天都要对话的助手。",
+      i4h: "咨询与服务机构", i4p: "简短专业，印在名片和发票上都好看。",
+      i5h: "亲子、教育与宠物", i5p: "发音柔和圆润，给家庭用户温暖、安全的感觉。",
+      i6h: "健康与个人护理", i6p: "干净温和，适合做消费类的健康品牌。",
+      f1h: "够短",
+      f1p: "只有六个字母，好输入、好记、也好念。",
+      f2h: "正宗 .com",
+      f2p: "客户最信任的后缀，也是大家第一个会去试的后缀。",
+      f3h: "来源干净",
+      f3p: "同一位持有人多年持有。过户通过注册商办理，流程正规。",
+      formTitle: "有兴趣？留下你的联系方式。",
+      formP1: "欢迎出价。告诉我怎么联系你，以及你的想法，我会亲自回复，通常两三天内。",
+      formP2: "你的信息只会发给域名持有人，不会泄露给任何人。",
+      lName: "你的称呼", lEmail: "邮箱", lWechat: "微信或手机", lOffer: "预算或报价", lMsg: "留言",
+      optional: "（选填）",
+      send: "提交联系方式",
+      sending: "提交中…",
+      ok: "收到了，谢谢。我会尽快联系你。",
+      errFields: "请填写称呼和正确的邮箱。",
+      errSend: "提交失败了，请稍后再试，或者直接发邮件给域名持有人。",
+      langBtn: "English",
+      title: "timocy.com 域名出售"
+    }
+  };
+
+  let lang = (navigator.language || "en").toLowerCase().startsWith("zh") ? "zh" : "en";
+  try { lang = localStorage.getItem("lang") || lang; } catch (e) {}
+
+  function apply() {
+    document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+    document.title = T[lang].title;
+    document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = T[lang][el.dataset.i18n]; });
+    document.getElementById("langBtn").textContent = T[lang].langBtn;
+  }
+
+  document.getElementById("langBtn").addEventListener("click", () => {
+    lang = lang === "en" ? "zh" : "en";
+    try { localStorage.setItem("lang", lang); } catch (e) {}
+    apply();
+  });
+
+  const form = document.getElementById("form");
+  const msg = document.getElementById("msg");
+  const btn = document.getElementById("sendBtn");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    msg.className = "msg";
+    const data = Object.fromEntries(new FormData(form).entries());
+    if (!data.name.trim() || !/^\S+@\S+\.\S+$/.test(data.email.trim())) {
+      msg.textContent = T[lang].errFields; msg.classList.add("err"); return;
+    }
+    btn.disabled = true; btn.textContent = T[lang].sending;
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({ ...data, _subject: "timocy.com inquiry" })
+      });
+      if (!res.ok) throw new Error("bad status");
+      form.reset();
+      msg.textContent = T[lang].ok; msg.classList.add("ok");
+    } catch (err) {
+      msg.textContent = T[lang].errSend; msg.classList.add("err");
+    } finally {
+      btn.disabled = false; btn.textContent = T[lang].send;
+    }
+  });
+
+  apply();
+</script>
+</body>
+</html>
